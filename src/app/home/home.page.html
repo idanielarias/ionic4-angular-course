@@ -4,7 +4,7 @@
       <ion-back-button defaultHref="/places"></ion-back-button>
     </ion-buttons>
     <ion-title>
-      JsonPlaceholder
+      Instagram
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -12,10 +12,10 @@
 <ion-content>
   <ion-list>
     <ion-card *ngFor="let photo of photos">
-      <img [src]="photo.thumbnailUrl" alt="{{photo.title}}">
+      <img [src]="photo.thumbnail_resources" alt="{{photo.accessibility_caption}}">
       <ion-card-content>
         <p>{{photo.title}}</p>
-        <p>{{photo.albumId}}: <a [href]="photo.url" target="_blank">{{photo.url}}</a></p>
+        <p>{{photo.albumId}}: <a [href]="photo.display_url" target="_blank">{{photo.display_url}}</a></p>
       </ion-card-content>
     </ion-card>
   </ion-list>

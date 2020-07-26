@@ -8,7 +8,7 @@ export class PhotosService {
   constructor(private http: HttpClient) {}
 
   getPhotos() {
-    return this.http.get<any>('https://jsonplaceholder.typicode.com/photos?_limit=20');
+    return this.http.get<any>('https://www.instagram.com/explore/tags/boutinelababe/?__a=1');
   }
 
 }

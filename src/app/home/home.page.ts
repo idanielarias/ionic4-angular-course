@@ -15,6 +15,7 @@ export class HomePage implements OnInit {
     this.photoService.getPhotos()
       .subscribe(data => {
         this.photos = data;
+        console.log(data);
       });
   }
 
